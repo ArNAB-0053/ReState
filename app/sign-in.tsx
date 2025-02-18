@@ -32,16 +32,16 @@ const SignIn = () => {
                     Let's Get Closer to {"\n"}
                         <Text className="text-primary-300">Your Ideal Home</Text>
                 </Text>
-                <Text className="text-xl font-rubik text-center  text-black-300 mt-10">Login ReState With Google</Text>
+                <Text className="text-lg font-rubik text-center  text-black-300 mt-8">Login ReState With Google</Text>
 
-                <TouchableOpacity onPress={handleSignIn} className="text-black-300 border mt-4 bg-white h-12 shadow-md shadow-zinc-300 rounded-full px-3 py-3">
+                <TouchableOpacity onPress={handleSignIn} className="text-black-300 border mt-4 bg-white h-12 shadow-md shadow-zinc-300 rounded-full px-3 py-2">
                     <View className="flex items-center justify-center w-full h-full gap-x-3 flex-row">
                         <Image
                             source={icons.google}
                             resizeMode="contain"
-                            className="w-5 h-5"
+                            className="size-5"
                         />
-                        <Text className="text-black-300 font-rubik-medium text-lg">
+                        <Text className="text-black-300 font-rubik-medium text-md ">
                             Continue with Google
                         </Text>
                     </View>

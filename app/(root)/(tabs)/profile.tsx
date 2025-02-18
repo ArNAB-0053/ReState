@@ -1,6 +1,5 @@
 import {View, Text, ScrollView, Image, TouchableOpacity, ImageSourcePropType, Alert} from 'react-native'
 import React from 'react'
-import {useLocalSearchParams} from "expo-router";
 import {SafeAreaView} from "react-native-safe-area-context";
 import icons from "@/constants/icons";
 import images from "@/constants/images";
@@ -45,6 +44,7 @@ const Profile = () => {
             Alert.alert("Failed to logout");
         }
     }
+
     return (
         <SafeAreaView className="h-full bg-white">
             <ScrollView

@@ -1,20 +1,68 @@
-import { Text, View } from "react-native";
-import {Link} from "expo-router";
+import {Image, ScrollView, Text, TouchableOpacity, View} from "react-native";
+import {SafeAreaView} from "react-native-safe-area-context";
+import images from "@/constants/images";
+import icons from "@/constants/icons";
+import Search from "@/components/Search";
+import {Card, FeaturedCard} from "@/components/Cards";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-        <Text className="text-4xl text-blue-950 font-black font-rubik-extrabold"> Welcome to ReState</Text>
-        <Link href='/sign-in'>Sign IN</Link>
-        <Link href='/explore'>Explore</Link>
-        <Link href='/profile'>Profile</Link>
-        <Link href='/properties/1'>Property</Link>
-    </View>
+    <SafeAreaView className="bg-white h-full">
+        <ScrollView
+            contentContainerClassName="pb-32"
+            showsVerticalScrollIndicator={false}
+        >
+            <View className="px-5">
+                <View className="flex flex-row items-center justify-between mt-5">
+                    <View className="flex flex-row items-center">
+                        <Image source={images.avatar} className='size-12 rounded-full' />
+                        <View className="flex flex-col items-start ml-2 justify-center">
+                            <Text className="text-sm text-black-100">Good Morning</Text>
+                            <Text className="text-xl text-black-300 font-rubik-medium">Arnab</Text>
+                        </View>
+                    </View>
+                    <Image source={icons.bell} className='size-6' />
+                </View>
+            </View>
+
+            <Search />
+
+            <View className="my-5 px-5">
+                <View className="flex flex-row items-center justify-between">
+                    <Text className="text-xl font-rubik-bold text-black-300">
+                        Featured
+                    </Text>
+                    <TouchableOpacity>
+                        <Text className="text-base font-rubik-bold text-primary-300">
+                            See all
+                        </Text>
+                    </TouchableOpacity>
+                </View>
+
+                <View className="flex flex-row gap-x-5 mt-3">
+                    <FeaturedCard/>
+                    <FeaturedCard/>
+                </View>
+
+                <View className="mt-10">
+                    <View className="flex flex-row items-center justify-between">
+                        <Text className="text-xl font-rubik-bold text-black-300">
+                            Our Recommendation
+                        </Text>
+                        <TouchableOpacity>
+                            <Text className="text-base font-rubik-bold text-primary-300">
+                                See all
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+
+                    <View className="flex flex-row gap-x-5 ">
+                        <Card/>
+                        <Card/>
+                    </View>
+                </View>
+            </View>
+        </ScrollView>
+    </SafeAreaView>
   );
 }
