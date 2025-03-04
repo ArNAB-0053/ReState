@@ -36,13 +36,11 @@ I am new to React Native and wanted to start with a simple yet functional app to
   <tr align="center">
     <th width="25%">Home Screen</th>
     <th width="25%">Explore Screen</th>
-    <th width="25%">Profile Screen</th>
     <th width="25%">Property Details</th>
   </tr>
   <tr align="center">
-    <td><img src="https://github.com/user-attachments/assets/4e85a714-8214-4037-864b-b9fae256270a" width="300""></td>
-    <td><img src="https://github.com/user-attachments/assets/83441565-970c-432d-a17a-cf617ee60d24" width="300"></td>
-    <td><img src="https://github.com/user-attachments/assets/83441565-970c-432d-a17a-cf617ee60d24" width="300"></td>
-    <td><img src="https://github.com/user-attachments/assets/658f9118-66db-4fd3-a2d1-05e326dadabe" width="300"></td>
+    <td><img src="https://github.com/user-attachments/assets/4e85a714-8214-4037-864b-b9fae256270a" width="96%"></td>
+    <td><img src="https://github.com/user-attachments/assets/83441565-970c-432d-a17a-cf617ee60d24" width="96%"></td>
+    <td><img src="https://github.com/user-attachments/assets/658f9118-66db-4fd3-a2d1-05e326dadabe" width="96%"></td>
   </tr>
 </table>
