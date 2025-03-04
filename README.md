@@ -4,12 +4,20 @@
 ReState is a mobile app built with React Native that allows users to explore various properties. The app fetches property data from AppWrite and displays them in an organized way. It includes a seeding function to generate dummy property listings for testing purposes.
 
 ## Why This App?  
-I am learning React Native, and I wanted to build a simple yet functional app to understand the core concepts. This project helps me practice data fetching, navigation, and UI design while working with AppWrite as a backend service.
+I am new to React Native and wanted to start with a simple yet functional app to understand the core concepts. This project helps me learn the basics of data fetching, navigation, and UI design while also working with AppWrite as a backend service.
+
+## Tech Stack  
+- **Framework:** React Native (Expo)  
+- **Backend:** AppWrite (Google Authentication, Database)  
+- **Language:** TypeScript  
+- **Styling:** Tailwind CSS  
+- **Authentication:** Google Auth (via AppWrite)  
 
 ## Functionalities  
 - Fetches property data from AppWrite  
 - Includes a seeding function to add dummy data  
 - Allows users to browse properties and view details  
+- Google Authentication for secure sign-in  
 - Property management, booking, and favorites are not implemented yet  
 
 ## Screenshots  
