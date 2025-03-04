@@ -1,50 +1,31 @@
-# Welcome to your Expo app 👋
+# ReState - A Simple Property Viewing App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Introduction  
+ReState is a mobile app built with React Native that allows users to explore various properties. The app fetches property data from AppWrite and displays them in an organized way. It includes a seeding function to generate dummy property listings for testing purposes.
 
-## Get started
+## Why This App?  
+I am learning React Native, and I wanted to build a simple yet functional app to understand the core concepts. This project helps me practice data fetching, navigation, and UI design while working with AppWrite as a backend service.
 
-1. Install dependencies
+## Functionalities  
+- Fetches property data from AppWrite  
+- Includes a seeding function to add dummy data  
+- Allows users to browse properties and view details  
+- Property management, booking, and favorites are not implemented yet  
 
-   ```bash
-   npm install
-   ```
+## Screenshots  
 
-2. Start the app
+### Home Screen
+![Home Page](https://github.com/user-attachments/assets/4e85a714-8214-4037-864b-b9fae256270a)
 
-   ```bash
-    npx expo start
-   ```
 
-In the output, you'll find options to open the app in a
+### Explore Screen
+![Explore Screen](https://github.com/user-attachments/assets/83441565-970c-432d-a17a-cf617ee60d24)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Profile Screen 
+![Profile Screen](https://github.com/user-attachments/assets/0e0c4166-c874-4fdb-bedb-fb7a7c1e0fe9)
 
-## Get a fresh project
 
-When you're ready, run:
+### Property Details Screen
+![Property Details Screen](https://github.com/user-attachments/assets/658f9118-66db-4fd3-a2d1-05e326dadabe)
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
