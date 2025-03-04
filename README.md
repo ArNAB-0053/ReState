@@ -22,6 +22,16 @@ I am new to React Native and wanted to start with a simple yet functional app to
 
 ## Screenshots  
 
+<table align="center" width="70%">
+  <tr align="start">
+    <th width="24%">Auth Screen</th>
+    <th width="24%">Profile Screen</th>
+  </tr>
+  <tr align="center">
+    <td><img src="https://github.com/user-attachments/assets/19392431-33be-4fc5-b2dc-8d0a7f33d33e" width="60%"></td>
+    <td><img src="https://github.com/user-attachments/assets/83441565-970c-432d-a17a-cf617ee60d24" width="60%"></td>
+  </tr>
+</table>
 <table align="center" width="100%">
   <tr align="center">
     <th width="24%">Home Screen</th>
