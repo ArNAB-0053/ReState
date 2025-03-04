@@ -26,9 +26,9 @@ I am new to React Native and wanted to start with a simple yet functional app to
     <th width="50%">Auth Screen</th>
     <th width="50%">Profile Screen</th>
   </tr>
-  <tr align="start">
-    <td><img src="https://github.com/user-attachments/assets/19392431-33be-4fc5-b2dc-8d0a7f33d33e" height="533"></td>
-    <td><img src="https://github.com/user-attachments/assets/0e0c4166-c874-4fdb-bedb-fb7a7c1e0fe9" height="533"></td>
+  <tr align="center">
+    <td><img src="https://github.com/user-attachments/assets/19392431-33be-4fc5-b2dc-8d0a7f33d33e" width="56%"></td>
+    <td><img src="https://github.com/user-attachments/assets/0e0c4166-c874-4fdb-bedb-fb7a7c1e0fe9" width="56%"></td>
   </tr>
 </table>
 
