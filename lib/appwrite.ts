@@ -2,16 +2,25 @@ import {
     Client,
     Account,
     OAuthProvider,
-    Avatars,
+    Avatars, Databases,
 } from "react-native-appwrite";
 import * as Linking from "expo-linking";
 import { openAuthSessionAsync } from "expo-web-browser";
 
 export const config = {
     platform: "com.arnab.restate",
-    endpoint: process.env.EXPO_PUBLIC_APPWRITE_ENDPOINT,
-    projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID,
+    endpoint: process.env.EXPO_PUBLIC_APPWRITE_ENDPOINT ?? throwError("ENDPOINT"),
+    projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID ?? throwError("PROJECT_ID"),
+    databaseId: process.env.EXPO_PUBLIC_APPWRITE_DATABASE_ID ?? throwError("DATABASE_ID"),
+    agentsCollectionId: process.env.EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID ?? throwError("AGENTS_COLLECTION_ID"),
+    galleriesCollectionId: process.env.EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID ?? throwError("GALLERIES_COLLECTION_ID"),
+    reviewsCollectionId: process.env.EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID ?? throwError("REVIEWS_COLLECTION_ID"),
+    propertiesCollectionId: process.env.EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID ?? throwError("PROPERTIES_COLLECTION_ID"),
 };
+
+function throwError(key: string): never {
+    throw new Error(`Missing environment variable: EXPO_PUBLIC_APPWRITE_${key}`);
+}
 
 export const client = new Client();
 client
@@ -21,6 +30,7 @@ client
 
 export const avatar = new Avatars(client);
 export const account = new Account(client);
+export const databases = new Databases(client);
 
 export async function login() {
     try {
